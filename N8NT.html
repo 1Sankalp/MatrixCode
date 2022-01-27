@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<center>
+<head>
+  <meta charset="utf-8">
+  <title>MatrixCode</title>
+  <link rel="icon" href="images/qr3.jpg">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+
+</head>
+
+<body>
+  
+
+<header class="navigation fixed-top">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/qr3.jpg" style="height: 60%; width: 60%; object-fit: contain; padding-left: 15px;"></a>
+    
+
+    
+  </nav>
+</header>
+
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">MatrixCode</h1><br><br><br><br>
+        <form action="" onsubmit="return sendToPage()" method="post">
+          <input type="text" id="search" placeholder="Search Code" value="">
+        </form>
+          <p class="text-white font-tertiary" style="padding-top: 50px; font-size: 20px;">Every day may not be good... but there’s something good in every day.</p><br><br><br>        
+        <h5 class="text-white font-tertiary" style="padding-top: 100px;">22/22 minted<br><br>
+MatrixCode is a collection of NFTs - unique digital collectibles on the Polygon Blockchain.<br> <br>22 QR codes have been programmatically generated with a special message encrypted in them.<br><br>
+Own a Matrix Code and be a part of the crypto revolution!</h2>
+        <h3 class="text-white font-tertiary" style="padding-top:100px">PROVENANCE RECORD</h3>
+        <br><br><h4 class="text-white font-tertiary" >Contract Details</h4><br>
+        <h5 class="text-white font-tertiary">Contract | <a href='https://opensea.io/collection/matrixcodes' style="color:lime">0xfcd1dd84291f80994072d4221cdbe38bd246a7d1</a></h5>
+      </div>
+    </div>
+  </div>
+  <div class="layer-bg w-100">
+  </div>
+</section>
+<!-- /hero area -->
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+
+<footer>
+  <div class="border-top text-center border-dark py-5">
+    <h4 class="mb-10 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> MatrixCode by<a href="https://sankal.web.app"> Sankalp Shrivastava</a></h4>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
